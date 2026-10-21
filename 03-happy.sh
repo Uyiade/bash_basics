@@ -14,3 +14,10 @@ fi
 
 # exercise: write a script that prints whether today is
 # the weekend or not
+day=$(date +%a)
+
+if [ "$day" = "Sat" ] || [ "$day" = "Sun" ]; then
+    echo "Enjoy your weekend!"
+else
+    echo "Time to work!"
+fi
